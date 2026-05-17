@@ -51,7 +51,17 @@
 
 /* Image moitié haute */
 .recipe-card__image { height: 175px; background-size: cover; background-position: center; background-color: var(--brun-souk); position: relative; flex-shrink: 0; }
-.recipe-card__image-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(20,6,2,0.25) 0%, rgba(20,6,2,0.7) 60%, rgba(20,6,2,0.93) 100%); }
+.recipe-card__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20,6,2,0.0) 0%,
+    rgba(20,6,2,0.15) 35%,
+    rgba(20,6,2,0.75) 65%,
+    rgba(20,6,2,0.95) 100%
+  );
+}
 .recipe-card__image-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 22px; }
 .recipe-card__number { font-size: 10px; letter-spacing: 0.3em; color: var(--recipe-accent,var(--or-imperial)); display: block; margin-bottom: 5px; font-weight: 500; }
 .recipe-card__name { font-family: var(--font-display); font-size: clamp(19px,1.7vw,23px); font-weight: 400; line-height: 1.2; margin-bottom: 3px; color: var(--creme-sable); }
