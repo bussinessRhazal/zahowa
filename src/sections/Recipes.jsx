@@ -2,7 +2,11 @@ import { RECIPES } from '../data/recipes';
 
 export default function Recipes() {
   return (
-    <section className="recipes" id="recipes">
+    <section
+  className="recipes"
+  id="recipes"
+  style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/recipes-bg.webp)` }}
+>
       <div className="container">
         <header className="recipes__intro reveal">
           <div className="eyebrow recipes__eyebrow"><span className="eyebrow__line" />Numéro 02 · Le produit</div>
