@@ -8,18 +8,19 @@ export default function FoundersForm() {
   const [step, setStep] = useState(1);
 
   const onSubmit = async (data) => {
-    try {
-      const fd = new FormData();
-      const moments = Array.isArray(data.moments) ? data.moments.join(', ') : (data.moments || '');
-      Object.entries({ ...data, moments }).forEach(([k, v]) => fd.append(k, v || ''));
-      fd.append('_subject', `Nouveau membre Cercle Fondateur — ${data.prenom}`);
-      fd.append('_template', 'table');
-      fd.append('_captcha', 'false');
-      const res = await fetch(SITE_CONFIG.formEndpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: fd });
-      if (res.ok) { setStatus('success'); reset(); }
-      else throw new Error();
-    } catch { setStatus('error'); }
-  };
+  try {
+    const moments = Array.isArray(data.moments)
+      ? data.moments.join(', ')
+      : (data.moments || '');
+    const res = await fetch(SITE_CONFIG.formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ ...data, moments })
+    });
+    if (res.ok) { setStatus('success'); reset(); }
+    else throw new Error();
+  } catch { setStatus('error'); }
+};
 
   if (status === 'success') return (
     <div className="founders-form founders-form--success">
