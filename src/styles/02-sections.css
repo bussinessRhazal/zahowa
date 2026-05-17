@@ -68,7 +68,15 @@
 .recipe-card__city { font-family: var(--font-display); font-style: italic; font-size: 12px; color: var(--recipe-accent,var(--or-imperial)); display: block; }
 
 /* Moitié basse */
-.recipe-card__body { padding: 20px 22px; flex: 1; display: flex; flex-direction: column; gap: 14px; }
+.recipe-card__body {
+  padding: 20px 22px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: rgba(247, 243, 236, 0.06);
+  border-top: 1px solid rgba(184,146,42,0.2);
+}
 .recipe-card__profile { font-size: 13px; color: rgba(247,243,236,0.8); line-height: 1.5; }
 .recipe-card__profile strong { font-weight: 500; color: var(--creme-sable); }
 .recipe-card__moment { display: flex; align-items: flex-start; gap: 7px; font-family: var(--font-display); font-style: italic; font-size: 13px; color: var(--recipe-accent,var(--or-imperial)); line-height: 1.4; padding: 10px 0; border-top: 1px solid rgba(184,146,42,0.14); border-bottom: 1px solid rgba(184,146,42,0.14); }
