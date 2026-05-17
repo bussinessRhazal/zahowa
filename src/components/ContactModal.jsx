@@ -14,17 +14,16 @@ export default function ContactModal({ onClose }) {
   }, [onClose]);
 
   const onSubmit = async (data) => {
-    try {
-      const fd = new FormData();
-      Object.entries(data).forEach(([k, v]) => fd.append(k, v));
-      fd.append('_subject', `Message de ${data.prenom} — Zahowa`);
-      fd.append('_template', 'table');
-      fd.append('_captcha', 'false');
-      const res = await fetch(SITE_CONFIG.formEndpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: fd });
-      if (res.ok) { setStatus('success'); reset(); }
-      else throw new Error();
-    } catch { setStatus('error'); }
-  };
+  try {
+    const res = await fetch(SITE_CONFIG.formEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (res.ok) { setStatus('success'); reset(); }
+    else throw new Error();
+  } catch { setStatus('error'); }
+};
 
   return (
     <div className="modal-overlay" role="dialog" aria-modal="true"
