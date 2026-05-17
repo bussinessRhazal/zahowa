@@ -7,7 +7,7 @@ export const RECIPES = [
     profile: 'Sucré & Équilibré',
     description: "L'éveil sucré de l'Atlantique.",
     moment: 'Le matin, pour un réveil tout en douceur',
-    cityImage: 'https://images.unsplash.com/photo-1539020140153-e479b8a4a79c?w=600&q=75',
+    cityImage: '${import.meta.env.BASE_URL}images/recipe-casablanca.webp',
     spices: [
       { name: 'Anis vert' },
       { name: 'Fenouil' },
@@ -24,7 +24,7 @@ export const RECIPES = [
     profile: 'Chaud & Réconfortant',
     description: 'Le cocon royal.',
     moment: "Après le déjeuner ou en fin d'après-midi",
-    cityImage: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=75',
+    cityImage: '${import.meta.env.BASE_URL}images/recipe-rabat.webp',
     spices: [
       { name: 'Cannelle Ceylan' },
       { name: 'Gingembre séché' },
@@ -41,7 +41,7 @@ export const RECIPES = [
     profile: 'Floral & Subtil',
     description: 'La contemplation florale.',
     moment: 'Le soir, pour un moment de contemplation',
-    cityImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75',
+    cityImage: '${import.meta.env.BASE_URL}images/recipe-fes.webp',
     spices: [
       { name: 'Rose damascena' },
       { name: 'Safran de Taliouine' },
@@ -58,7 +58,7 @@ export const RECIPES = [
     profile: 'Intense & Complexe',
     description: 'Le caractère du Sud.',
     moment: "L'après-midi ou après un repas généreux",
-    cityImage: 'https://images.unsplash.com/photo-1489493585363-d69421e0edd3?w=600&q=75',
+    cityImage: '${import.meta.env.BASE_URL}images/recipe-marrakech.webp',
     spices: [
       { name: 'Poivre noir Tellichery' },
       { name: 'Clou de girofle' },
