@@ -179,6 +179,22 @@ if (status === 'success') return (
                 {FORM_OPTIONS.channels.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
               </select>
             </div>
+<div className="form-group">
+  <label className="consent-label">
+    <input
+      type="checkbox"
+      {...register('consentement', { required: 'Tu dois accepter pour continuer' })}
+    />
+    <span className="consent-text">
+      J'accepte que mes données soient utilisées pour traiter ma demande,
+      conformément à la politique de confidentialité de Zahowa. *
+    </span>
+  </label>
+  {errors.consentement && (
+    <span className="form-error">{errors.consentement.message}</span>
+  )}
+</div>
+            
             {status === 'error' && (
               <div className="form-error-banner">
                 Erreur d'envoi. Écris-nous à <a href="mailto:contact@zahowa.com">contact@zahowa.com</a>
