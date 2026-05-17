@@ -1,0 +1,32 @@
+:root {
+  --chocolat-fes: #3D1F0E;
+  --brun-souk: #7B3A1A;
+  --creme-sable: #F7F3EC;
+  --or-imperial: #B8922A;
+  --or-imperial-soft: #C9A547;
+  --bg-base: #FAF7F1;
+  --bg-warm: #F2EAD9;
+  --bg-warm-deep: #E8DCC5;
+  --bg-deep: #3D1F0E;
+  --bg-deep-soft: #2A1408;
+  --text-primary: #3D1F0E;
+  --text-secondary: #7B3A1A;
+  --text-muted: #8B6F5C;
+  --text-on-dark: #F7F3EC;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --space-2xl: 160px;
+  --container-max: 1440px;
+  --container-padding: clamp(20px, 5vw, 80px);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast: 0.2s var(--ease-smooth);
+  --transition-base: 0.4s var(--ease-smooth);
+  --transition-slow: 0.6s var(--ease-smooth);
+  --z-nav: 100;
+  --z-sticky: 500;
+  --z-modal: 1000;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
