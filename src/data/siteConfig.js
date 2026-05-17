@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
     linkedin: 'https://www.linkedin.com/company/zahowacoffee'
   },
   // ⚠️ Remplacer par ton hash FormSubmit après première soumission
-  formEndpoint: 'https://formsubmit.co/ajax/contact@zahowa.com',
+  formEndpoint: 'https://formspree.io/f/mjgzbqdw',
   founderCircle: {
     totalSeats: 100,
     seatsTaken: 12,
