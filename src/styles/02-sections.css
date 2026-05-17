@@ -83,7 +83,14 @@
 .recipe-card__moment-icon { font-size: 13px; flex-shrink: 0; margin-top: 1px; }
 .recipe-card__spices { margin-top: auto; }
 .recipe-card__spices-label { font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--recipe-accent,var(--or-imperial)); margin-bottom: 8px; display: block; font-weight: 500; }
-.recipe-card__spice-list { list-style: none; font-family: var(--font-display); font-style: italic; font-size: 14px; color: var(--creme-sable); line-height: 1.75; }
+.recipe-card__spice-list {
+  list-style: none;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--or-imperial-soft);
+  line-height: 1.75;
+}
 
 /* ===== PILLARS — 4 colonnes ===== */
 .pillars { padding: var(--space-2xl) 0; background: var(--bg-base); }
