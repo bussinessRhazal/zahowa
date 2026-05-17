@@ -22,16 +22,38 @@ export default function FoundersForm() {
   } catch { setStatus('error'); }
 };
 
-  if (status === 'success') return (
-    <div className="founders-form founders-form--success">
-      <div className="founders-form__success">
-        <div className="founders-form__success-icon">✦</div>
-        <h3 className="founders-form__success-title">Bienvenue dans le Cercle.</h3>
-        <p className="founders-form__success-text">Tu es désormais l'un·e des 100 fondateurs·rices de Zahowa.<br />Un email de confirmation arrive dans quelques minutes.</p>
-        <p className="founders-form__success-signature">— Abdelilah, Fès</p>
+if (status === 'success') return (
+  <div className="founders-form founders-form--success">
+    <div className="founders-form__success">
+      <div className="founders-form__success-badge">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M18 30C18 30 6 24 6 14c0-6 6-9 12-9s12 3 12 9c0 10-12 16-12 16Z"/>
+          <path d="M18 30V18M18 22c0 0-6-4-8-8M18 18c0 0 6-2 9-6"/>
+        </svg>
+      </div>
+      <h3 className="founders-form__success-title">Shukran !</h3>
+      <p className="founders-form__success-text">
+        Tu es dans la liste. On te prévient en avant-première<br />
+        dès que Zahowa est prête.
+      </p>
+      <p className="founders-form__success-social-label">Suis-nous sur les réseaux</p>
+      <div className="founders-form__success-socials">
+        <a href="https://www.facebook.com/zahowacoffee/" target="_blank" rel="noopener noreferrer" className="success-social-btn" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/zahowacoffee/" target="_blank" rel="noopener noreferrer" className="success-social-btn" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@zahowacoffee" target="_blank" rel="noopener noreferrer" className="success-social-btn" aria-label="TikTok">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/zahowacoffee" target="_blank" rel="noopener noreferrer" className="success-social-btn" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
       </div>
     </div>
-  );
+  </div>
+);
 
   return (
     <div className="founders-form">
