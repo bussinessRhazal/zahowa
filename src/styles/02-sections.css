@@ -133,45 +133,50 @@
 .sticky-cta:hover .sticky-cta__arrow { transform: translateX(4px); }
 @media (min-width: 968px) { .sticky-cta { display: none; } }
 @media (max-width: 560px) { .sticky-cta { bottom: 14px; right: 14px; left: 14px; justify-content: center; padding: 15px; font-size: 12px; } }
-/* ===== SUCCESS STATE ===== */
+
+/* ===== SUCCESS STATE (forms) ===== */
 .founders-form__success-badge {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: var(--bg-warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 24px;
-  color: var(--brun-souk);
-  border: 1px solid rgba(184,146,42,0.2);
-  animation: pop 0.5s var(--ease-bounce);
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--bg-warm); display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px; color: var(--brun-souk);
+  border: 1px solid rgba(184,146,42,0.2); animation: pop 0.5s var(--ease-bounce);
 }
 .founders-form__success-social-label {
-  font-size: 12px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-on-dark);
-  opacity: 0.65;
-  margin-bottom: 16px;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-on-dark); opacity: 0.62; margin-bottom: 14px;
 }
-.founders-form__success-socials {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
+.founders-form__success-socials { display: flex; justify-content: center; gap: 10px; }
 .success-social-btn {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--or-imperial);
-  color: var(--chocolat-fes);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 46px; height: 46px; border-radius: 50%; background: var(--or-imperial);
+  color: var(--chocolat-fes); display: flex; align-items: center; justify-content: center;
   transition: background var(--transition-fast), transform var(--transition-fast);
 }
-.success-social-btn:hover {
-  background: var(--or-imperial-soft);
-  transform: scale(1.08);
+.success-social-btn:hover { background: var(--or-imperial-soft); transform: scale(1.08); }
+
+/* Contact modal success */
+.contact-success { text-align: center; padding: 8px 0; }
+.contact-success__title {
+  font-family: var(--font-display); font-size: clamp(24px,3.5vw,34px);
+  font-weight: 400; color: var(--chocolat-fes); margin-bottom: 12px;
 }
+.contact-success__text {
+  font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 28px;
+}
+
+/* Select dans modale contact */
+.form-select--light {
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%237B3A1A' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 4px center; padding-right: 22px; cursor: pointer;
+}
+.form-select--light option { background: white; color: var(--text-primary); }
+
+/* Consentement RGPD */
+.consent-label {
+  display: flex; align-items: flex-start; gap: 12px; cursor: pointer; margin-top: 4px;
+}
+.consent-label input[type="checkbox"] {
+  width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px;
+  accent-color: var(--chocolat-fes); cursor: pointer;
+}
+.consent-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
