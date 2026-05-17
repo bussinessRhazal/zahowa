@@ -7,7 +7,7 @@ export const RECIPES = [
     profile: 'Sucré & Équilibré',
     description: "L'éveil sucré de l'Atlantique.",
     moment: 'Le matin, pour un réveil tout en douceur',
-    cityImage: '/zahowa/images/recipe-casablanca.webp',
+    cityImage: '/images/recipe-casablanca.webp',
     spices: [
       { name: 'Anis vert' },
       { name: 'Fenouil' },
@@ -24,7 +24,7 @@ export const RECIPES = [
     profile: 'Chaud & Réconfortant',
     description: 'Le cocon royal.',
     moment: "Après le déjeuner ou en fin d'après-midi",
-    cityImage: '/zahowa/images/recipe-rabat.webp',
+    cityImage: '/images/recipe-rabat.webp',
     spices: [
       { name: 'Cannelle Ceylan' },
       { name: 'Gingembre séché' },
@@ -41,7 +41,7 @@ export const RECIPES = [
     profile: 'Floral & Subtil',
     description: 'La contemplation florale.',
     moment: 'Le soir, pour un moment de contemplation',
-    cityImage: '/zahowa/images/recipe-fes.webp',
+    cityImage: '/images/recipe-fes.webp',
     spices: [
       { name: 'Rose damascena' },
       { name: 'Safran de Taliouine' },
@@ -58,7 +58,7 @@ export const RECIPES = [
     profile: 'Intense & Complexe',
     description: 'Le caractère du Sud.',
     moment: "L'après-midi ou après un repas généreux",
-    cityImage: '/zahowa/images/recipe-marrakech.webp',
+    cityImage: '/images/recipe-marrakech.webp',
     spices: [
       { name: 'Poivre noir Tellichery' },
       { name: 'Clou de girofle' },
