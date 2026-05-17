@@ -133,3 +133,45 @@
 .sticky-cta:hover .sticky-cta__arrow { transform: translateX(4px); }
 @media (min-width: 968px) { .sticky-cta { display: none; } }
 @media (max-width: 560px) { .sticky-cta { bottom: 14px; right: 14px; left: 14px; justify-content: center; padding: 15px; font-size: 12px; } }
+/* ===== SUCCESS STATE ===== */
+.founders-form__success-badge {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--bg-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: var(--brun-souk);
+  border: 1px solid rgba(184,146,42,0.2);
+  animation: pop 0.5s var(--ease-bounce);
+}
+.founders-form__success-social-label {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-on-dark);
+  opacity: 0.65;
+  margin-bottom: 16px;
+}
+.founders-form__success-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.success-social-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--or-imperial);
+  color: var(--chocolat-fes);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.success-social-btn:hover {
+  background: var(--or-imperial-soft);
+  transform: scale(1.08);
+}
