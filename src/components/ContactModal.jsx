@@ -38,16 +38,26 @@ export default function ContactModal({ onClose }) {
           <p className="modal-subtitle">Une question ? Une idée ? On te lit.</p>
         </div>
 
-        {status === 'success' ? (
-          <div className="modal-success">
-            <div style={{ fontSize: '2.5rem', color: 'var(--or-imperial)', marginBottom: 16 }}>✦</div>
-            <p style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', fontWeight: 300 }}>Message envoyé.</p>
-            <p style={{ opacity: 0.7, marginTop: 8, fontSize: 14 }}>On te répond sous 48h.</p>
-            <button className="btn-primary" style={{ marginTop: 32 }} onClick={onClose}>
-              Fermer <span className="btn-primary__arrow">→</span>
-            </button>
-          </div>
-        ) : (
+{status === 'success' ? (
+  <div className="modal-success">
+    <div className="founders-form__success-badge" style={{ margin: '0 auto 20px' }}>
+      <svg width="28" height="28" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M18 30C18 30 6 24 6 14c0-6 6-9 12-9s12 3 12 9c0 10-12 16-12 16Z"/>
+        <path d="M18 30V18M18 22c0 0-6-4-8-8M18 18c0 0 6-2 9-6"/>
+      </svg>
+    </div>
+    <h3 className="founders-form__success-title" style={{ color: 'var(--chocolat-fes)', fontSize: 'clamp(22px,3vw,30px)' }}>
+      Shukran !
+    </h3>
+    <p style={{ fontSize: '15px', color: 'var(--text-secondary)', lineHeight: 1.7, margin: '12px 0 28px' }}>
+      Merci pour ton message.<br />
+      Nous reviendrons vers toi dans les plus brefs délais.
+    </p>
+    <button className="btn-primary" onClick={onClose}>
+      Fermer <span className="btn-primary__arrow">→</span>
+    </button>
+  </div>
+) : (
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <div className="form-row">
               <div className="form-group">
