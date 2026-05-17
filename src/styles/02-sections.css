@@ -14,8 +14,28 @@
 @media (max-width: 968px) { .story__grid { grid-template-columns: 1fr; gap: 28px; } .story__number { position: static; } .story__quote { padding: 28px 20px; margin: 40px 0; } }
 
 /* ===== RECIPES ===== */
-.recipes { padding: var(--space-2xl) 0; background: var(--bg-deep); color: var(--text-on-dark); position: relative; overflow: hidden; }
-.recipes::before { content: ''; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23B8922A' fill-opacity='0.05'%3E%3Cpath d='M40 0L60 20 40 40 20 20ZM40 40L60 60 40 80 20 60Z'/%3E%3C/g%3E%3C/svg%3E"); pointer-events: none; }
+.recipes {
+  padding: var(--space-2xl) 0;
+  background-color: var(--bg-deep);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-on-dark);
+  position: relative;
+  overflow: hidden;
+}
+.recipes::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 6, 2, 0.80);
+  pointer-events: none;
+  z-index: 0;
+}
+.recipes .container {
+  position: relative;
+  z-index: 1;
+}
 .recipes__intro { text-align: center; margin-bottom: 72px; position: relative; }
 .recipes__eyebrow { color: var(--or-imperial); margin-bottom: 20px; justify-content: center; }
 .recipes__title { font-family: var(--font-display); font-size: clamp(38px,5.5vw,68px); font-weight: 300; line-height: 1.1; margin-bottom: 20px; color: var(--creme-sable); }
