@@ -27,6 +27,10 @@ export default function Nav() {
           <a href="#story" onClick={(e) => go(e, 'story')}>L'Histoire</a>
           <a href="#recipes" onClick={(e) => go(e, 'recipes')}>Les Recettes</a>
           <a href="#pillars" onClick={(e) => go(e, 'pillars')}>La Méthode</a>
+            {/* ← AJOUTER CES 2 LIGNES */}
+  <a href="/sondage.html" className="nav__sondage">
+    Donner mon avis ✦
+  </a>
           <a href="#founders" className="nav__cta" onClick={(e) => go(e, 'founders')}>Cercle Fondateur</a>
         </div>
         <button className={`nav__burger${mobileOpen ? ' nav__burger--open' : ''}`}
