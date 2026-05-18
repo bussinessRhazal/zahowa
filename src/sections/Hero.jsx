@@ -41,6 +41,13 @@ export default function Hero() {
               Découvrir l'histoire
             </a>
           </div>
+          {/* ← AJOUTER CE BLOC */}
+<p className="hero__sondage-cta">
+  Tu veux influencer nos recettes ?{' '}
+  <a href="/sondage.html" className="hero__sondage-link">
+    Réponds au sondage de 5 min →
+  </a>
+</p>
         </div>
       </div>
 
