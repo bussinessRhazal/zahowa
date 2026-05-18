@@ -225,3 +225,58 @@
   accent-color: var(--chocolat-fes); cursor: pointer;
 }
 .consent-text { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+/* Sondage banner */
+.sondage-banner {
+  background: var(--bg-warm);
+  border-top: 1px solid rgba(184,146,42,0.2);
+  border-bottom: 1px solid rgba(184,146,42,0.2);
+  padding: 40px 0;
+}
+.sondage-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.sondage-banner__eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--or-imperial);
+  margin-bottom: 8px;
+}
+.sondage-banner__text {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 300;
+  color: var(--chocolat-fes);
+  line-height: 1.5;
+}
+.sondage-banner__text strong {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+}
+.sondage-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: var(--chocolat-fes);
+  color: var(--creme-sable);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background var(--transition-base);
+  flex-shrink: 0;
+}
+.sondage-banner__btn:hover { background: var(--brun-souk); }
+@media (max-width: 640px) {
+  .sondage-banner__inner { flex-direction: column; align-items: flex-start; }
+  .sondage-banner__btn { width: 100%; justify-content: center; }
+}
