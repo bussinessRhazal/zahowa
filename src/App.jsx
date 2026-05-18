@@ -33,7 +33,7 @@ export default function App() {
           <p className="sondage-banner__eyebrow">✦ Ton avis compte</p>
           <p className="sondage-banner__text">
             Aide-nous à créer le café que tu mérites.<br />
-            <strong>15 questions · 5 minutes · 100% confidentiel</strong>
+            <strong>10 questions · 5 minutes · 100% confidentiel</strong>
           </p>
         </div>
         <a href="/sondage.html" className="sondage-banner__btn">
