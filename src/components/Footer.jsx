@@ -21,6 +21,11 @@ export default function Footer({ onOpenModal }) {
               <li><a href="#recipes">Les 4 recettes</a></li>
               <li><a href="#pillars">La méthode</a></li>
               <li><a href="#founders">Cercle Fondateur</a></li>
+              <li>
+      <a href="/sondage.html" style={{ color: 'var(--or-imperial)', opacity: 1 }}>
+        ✦ Donner mon avis
+      </a>
+    </li>
             </ul>
           </nav>
 
