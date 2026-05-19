@@ -34,8 +34,8 @@ export default function FoundersForm() {
         </div>
         <h3 className="founders-form__success-title">Shukran !</h3>
         <p className="founders-form__success-text">
-          Tu es désormais l'un·e des 100 fondateurs·rices de Zahowa.<br />
-          Un email de confirmation arrive dans quelques minutes.
+          Un email de confirmation arrive dans ta boite mail prochainement.<br />
+          À bientôt...!
         </p>
         <p className="founders-form__success-social-label">Suis-nous sur les réseaux</p>
         <div className="founders-form__success-socials">
