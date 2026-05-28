@@ -64,7 +64,7 @@ export default function FoundersForm() {
       <header className="founders-form__header">
         <h3 className="founders-form__title">Rejoindre le Cercle</h3>
         <p className="founders-form__subtitle">
-          30 secondes pour réserver ta place parmi les 100 fondateurs.
+          30 secondes pour réserver ta place dans le cercle Zahowa Privilège .
         </p>
       </header>
 
