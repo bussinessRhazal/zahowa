@@ -34,7 +34,7 @@ export default function FoundersCircle() {
             <div className="eyebrow founders__eyebrow">
               <span className="eyebrow__line" />Numéro 04 · L'invitation
             </div>
-            <h2 className="founders__title">Cercle<br /><em>Fondateur</em></h2>
+            <h2 className="founders__title">Cercle<br /><em>Zahowa Privilège</em></h2>
 
             <div className="founders__counter" role="status" aria-live="polite">
               {loading ? (
@@ -50,7 +50,7 @@ export default function FoundersCircle() {
             <p className="founders__text">
               Les {seats.total} premières personnes à rejoindre Zahowa 
               co-construisent le produit et bénéficient d'avantages 
-              fondateurs permanents.
+              Zahowa Privilège permanents.
             </p>
 
             <ul className="founders__benefits">
