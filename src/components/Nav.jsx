@@ -31,7 +31,7 @@ export default function Nav() {
   <a href="/sondage.html" className="nav__sondage">
     Donner mon avis ✦
   </a>
-          <a href="#founders" className="nav__cta" onClick={(e) => go(e, 'founders')}>Cercle Fondateur</a>
+          <a href="#founders" className="nav__cta" onClick={(e) => go(e, 'founders')}>Cercle Zahowa Privilège</a>
         </div>
         <button className={`nav__burger${mobileOpen ? ' nav__burger--open' : ''}`}
           onClick={() => setMobileOpen(!mobileOpen)}
