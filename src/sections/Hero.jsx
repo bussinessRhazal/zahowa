@@ -28,7 +28,7 @@ export default function Hero() {
             Lancement bientôt
           </div>
           <h1 className="hero__title">
-            Le café<br /><em>épicé,</em><br />
+            Un café<br /><em>épicé,</em><br />
             comme tu ne l'as<br />jamais bu.
           </h1>
           <p className="hero__subtitle">Pour qui refuse le café sans âme.</p>
