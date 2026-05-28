@@ -4,7 +4,7 @@ import { SITE_CONFIG } from '../data/siteConfig';
 
 const SUBJECTS = [
   { value: 'produits', label: 'Question sur les produits' },
-  { value: 'fondateurs', label: 'Cercle Fondateur' },
+  { value: 'fondateurs', label: 'Cercle Zahowa Privilège' },
   { value: 'partenariat', label: 'Partenariat' },
   { value: 'autre', label: 'Autre' }
 ];
