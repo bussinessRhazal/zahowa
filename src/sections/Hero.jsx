@@ -34,7 +34,7 @@ export default function Hero() {
           <p className="hero__subtitle">Pour qui refuse le café sans âme.</p>
           <div className="hero__ctas">
             <a href="#founders" className="btn-primary" onClick={(e) => { e.preventDefault(); go('founders'); }}>
-              Rejoindre le Cercle Fondateur
+              Rejoindre le Cercle Zahowa Privilège
               <span className="btn-primary__arrow">→</span>
             </a>
             <a href="#story" className="btn-ghost" onClick={(e) => { e.preventDefault(); go('story'); }}>
