@@ -16,7 +16,7 @@ export default function StickyCTA() {
     <a href="#founders"
       className={`sticky-cta${visible ? ' sticky-cta--visible' : ''}`}
       onClick={(e) => { e.preventDefault(); document.getElementById('founders')?.scrollIntoView({ behavior: 'smooth' }); }}>
-      <span>Cercle Fondateur</span>
+      <span>Cercle Zahowa Privilège</span>
       <span className="sticky-cta__arrow">→</span>
     </a>
   );
