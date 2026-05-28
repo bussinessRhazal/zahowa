@@ -10,8 +10,7 @@ export default function Footer({ onOpenModal }) {
               <img src={`${import.meta.env.BASE_URL}images/zahowa-logo.jpg`} alt="Logo Zahowa" />
               <span className="footer__brand-name">ZAHOWA</span>
             </div>
-            <p className="footer__brand-tagline">Le café épicé, comme tu ne l'as jamais bu.</p>
-            <p className="footer__brand-origin">Fait à Fès · Infusé en France</p>
+            <p className="footer__brand-origin">Le café épicé, comme tu ne l'as jamais bu.</p>
           </div>
 
           <nav className="footer__col" aria-label="Découvrir">
